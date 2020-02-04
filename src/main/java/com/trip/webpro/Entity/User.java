@@ -1,6 +1,8 @@
 package com.trip.webpro.Entity;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private int user_id;
     private String user_email;
     private String user_password;

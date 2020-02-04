@@ -1,6 +1,5 @@
 package com.trip.webpro.Controller;
 
-import com.google.gson.Gson;
 import com.trip.webpro.Dao.UserDao;
 import com.trip.webpro.Entity.User;
 import com.trip.webpro.Service.UserService;
@@ -13,8 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.function.Supplier;
-import java.util.logging.Logger;
+
 
 /**
  * @Author:JohnSong

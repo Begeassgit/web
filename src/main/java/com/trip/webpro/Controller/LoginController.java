@@ -1,11 +1,7 @@
 package com.trip.webpro.Controller;
 
-import com.trip.webpro.Dao.UserDao;
 import com.trip.webpro.Entity.User;
 import com.trip.webpro.Service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,17 +16,14 @@ import javax.servlet.http.HttpSession;
  * @ProjectName:webpro
  **/
 @Controller
-@EnableAutoConfiguration
-@SpringBootApplication
 public class LoginController {
-    private final UserDao userDao;
 
-    public LoginController(UserDao userDao) {
-        this.userDao = userDao;
+    private final UserService userService;
+
+    public LoginController(UserService userService) {
+        this.userService = userService;
     }
-//
-    @Autowired
-    private UserService userService;
+
 
     @RequestMapping(value = "/login")
     public String index(){

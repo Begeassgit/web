@@ -1,8 +1,6 @@
 package com.trip.webpro.Service;
 
-import com.trip.webpro.Dao.UserDao;
 import com.trip.webpro.Entity.User;
-import org.springframework.stereotype.Service;
 
 //@Service
 public interface UserService{

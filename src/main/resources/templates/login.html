@@ -6,20 +6,21 @@
     <meta charset="UTF-8">
     <title>login</title>
 </head>
-<body>
+<body background="Image/h1.jpg">
 <div class="box">
     <h2>登录</h2>
     <form action="./loginPage" method="post">
         <div class="inputBox">
-            <input type="text" placeholder="请输入邮箱账号" name="user_email">
+            <input type="text" name="user_email" required="">
             <label>邮箱</label>
         </div>
         <div class="inputBox">
-            <input type="password" placeholder="请输入密码" name="user_password">
+            <input type="password"name="user_password" required="">
             <label>密码</label>
         </div>
        
         <input type="submit" id="submit" value="登录">
+        <a href="./register">注册</a>
     </form>
 </div>
 

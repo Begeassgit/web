@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>登陆成功</div>
+邮箱号：<a th:text="${session.tname.getUser_email()}"></a>
+年&ensp;&ensp;龄：<a th:text="${session.tname.getUser_age()}"></a>
+手机号：<a th:text="${session.tname.getUser_phone()}"></a>
+</body>
+</html>

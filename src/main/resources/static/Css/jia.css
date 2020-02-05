@@ -6,6 +6,13 @@
 	width:940px;
 	margin:0 auto;
 }
+#navigation {
+    position: absolute;
+    top: 70px;
+    right: 200px;
+    font-size: 13px;
+	color: gray;
+}
 .clearfix:before,.clearfix:after{
 	content: "";
 	display: table;
@@ -31,7 +38,7 @@
 .header input{
 	width:140px;
 	height:25px;
-	background: url(../img/header/search.png);
+	background: url(../Image/header/search.png);
 	float:left;
 	border:none;
 	padding-left:5px;

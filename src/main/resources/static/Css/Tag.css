@@ -8,7 +8,7 @@ body{
     margin: 0;
     padding: 10px;
     transform: translate(-50%,-50%);
-    background: rgba(31, 43, 1, 0.274);
+    background: rgba(172, 233, 18, 0.274);
     top: 50%;
     left: 50%;
 }
@@ -19,6 +19,12 @@ body{
 .tags .select{
     margin: 0;
     padding: 10px;
-    border-radius: 5px;
     font-size: large;
+}
+.tags .select input{
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(234, 248, 42, 0.842);
+    
 }

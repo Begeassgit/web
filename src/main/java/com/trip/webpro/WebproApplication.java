@@ -17,9 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebproApplication extends SpringBootServletInitializer {
 
 
-
     @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder){
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder) {
         return applicationBuilder.sources(WebproApplication.class);
     }
 

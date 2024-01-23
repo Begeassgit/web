@@ -10,26 +10,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class RegisterController {
     public final UserService userService;
-    public RegisterController(UserService userService){
-        this.userService=userService;
+
+    public RegisterController(UserService userService) {
+        this.userService = userService;
     }
 
     @RequestMapping(value = "/register")
-    public String registerIndex(){
+    public String registerIndex() {
         return "register.html";
     }
 
-    @RequestMapping(value = "/registerAction",method ={RequestMethod.POST,RequestMethod.GET})
-    public String register(User user){
-        if(userService.register(user))
-        {
+    @RequestMapping(value = "/registerAction", method = {RequestMethod.POST, RequestMethod.GET})
+    public String register(User user) {
+        if (userService.register(user)) {
             return "login.html";
-        }
-        else{
+        } else {
             return "error.html";
         }
     }
-
 
 
 }

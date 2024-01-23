@@ -1,38 +1,37 @@
-body
-{
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background-size: cover;
 }
-.box
-{
+
+.box {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 400px;
     padding: 40px;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
-.box h2
-{
+
+.box h2 {
     margin: 0 0 30px;
     padding: 0;
     color: azure;
     text-align: center;
 }
-.box .inputBox
-{
+
+.box .inputBox {
     position: relative;
 }
-.box .inputBox input
-{
+
+.box .inputBox input {
     width: 100%;
-    padding:  10px 0;
+    padding: 10px 0;
     font-size: 16px;
     color: azure;
     margin-bottom: 30px;
@@ -41,26 +40,26 @@ body
     outline: none;
     background: transparent;
 }
-.box .inputBox label
-{
-  position: absolute;
-  top:0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: azure;
-  pointer-events: none;
-  transition: .5s;
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: azure;
+    pointer-events: none;
+    transition: .5s;
 }
+
 .box .inputBox input:focus ~ label,
-.box .inputBox input:valid ~ label
-{
-    top:-35px;
+.box .inputBox input:valid ~ label {
+    top: -35px;
     left: 0;
     color: deepskyblue;
 }
-.box input[type="submit"]
-{
+
+.box input[type="submit"] {
     background: transparent;
     border: none;
     outline: none;
@@ -70,8 +69,8 @@ body
     cursor: pointer;
     border-radius: 5px;
 }
-.box a
-{
+
+.box a {
     color: azure;
     font-size: 15px;
     border: none;

@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="Css/Login.css">
-        <script>
-            function checkPassword(){
-                var user_password=document.forms['form1']['user_password'].value;
-                var user_password2=document.forms['form1']['user_password2'].value;
+<head>
+    <link rel="stylesheet" href="Css/Login.css">
+    <script>
+        function checkPassword() {
+            var user_password = document.forms['form1']['user_password'].value;
+            var user_password2 = document.forms['form1']['user_password2'].value;
 
-                if(user_password!=user_password2){
-                    alert("2次输入的密码不一致");
-                    return false;
-                }
-
-                if(user_password.length<6){
-                    alert("密码至少6位");
-                    return false;
-                }
-
-                return true;
+            if (user_password != user_password2) {
+                alert("2次输入的密码不一致");
+                return false;
             }
-        </script>
-    </head>
-    <title>用户注册</title>
-    <body background="Image/h1.jpg">
-        <div class="box">
-            <h2>用户注册</h2>
-           <form name="form1"action="./registerAction" method="POST" onsubmit="checkPassword()">
-            <div class="inputBox">
-                <input type="text" name="user_email" required="">
-                <label>邮箱</label>
-            </div>
-            <div class="inputBox">
-                <input type="password" name="user_password" required="">
-                <label>密码</label>
-            </div>
-            <div class="inputBox">
-                <input type="password" name="user_password2" required="">
-                <label>确认密码</label>
-            </div>
-            <div class="inputBox">
-                <input type="text" name="user_sex" required="">
-                <label>性别</label>
-            </div>
-            <div class="inputBox">
-                <input type="text" name="user_age" required="">
-                <label>年龄</label>
-            </div>
-            <div class="inputBox">
-                <input type="text" name="user_career" required="">
-                <label>职业</label>
-            </div>
-            <div class="inputBox">
-                <input type="text" name="user_phone" required="">
-                <label>联系方式</label>
-            </div>
 
-            <input type="submit" value="注册">
-           </form>
+            if (user_password.length < 6) {
+                alert("密码至少6位");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<title>用户注册</title>
+<body background="Image/h1.jpg">
+<div class="box">
+    <h2>用户注册</h2>
+    <form name="form1" action="./registerAction" method="POST" onsubmit="checkPassword()">
+        <div class="inputBox">
+            <input type="text" name="user_email" required="">
+            <label>邮箱</label>
         </div>
-    </body>
+        <div class="inputBox">
+            <input type="password" name="user_password" required="">
+            <label>密码</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="user_password2" required="">
+            <label>确认密码</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="user_sex" required="">
+            <label>性别</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="user_age" required="">
+            <label>年龄</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="user_career" required="">
+            <label>职业</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="user_phone" required="">
+            <label>联系方式</label>
+        </div>
+
+        <input type="submit" value="注册">
+    </form>
+</div>
+</body>
 </html>

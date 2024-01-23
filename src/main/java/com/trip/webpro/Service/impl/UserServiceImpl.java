@@ -17,17 +17,17 @@ public class UserServiceImpl implements UserService {
     @Resource
     public final UserDao userDao;
 
-    public UserServiceImpl(UserDao userDao){
-        this.userDao=userDao;
+    public UserServiceImpl(UserDao userDao) {
+        this.userDao = userDao;
     }
 
     @Override
-    public boolean register(User user){
-        return userDao.register(user)>=1?true:false;
+    public boolean register(User user) {
+        return userDao.register(user) >= 1 ? true : false;
     }
 
     @Override
-    public User login(String user_email,String user_password) {
-        return userDao.login(user_email,user_password);
+    public User login(String user_email, String user_password) {
+        return userDao.login(user_email, user_password);
     }
 }

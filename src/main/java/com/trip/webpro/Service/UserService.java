@@ -3,9 +3,10 @@ package com.trip.webpro.Service;
 import com.trip.webpro.Entity.User;
 
 //@Service
-public interface UserService{
+public interface UserService {
     public boolean register(User user);
-    public User login(String user_email,String user_password);
+
+    public User login(String user_email, String user_password);
 }
 //public class UserService {
 //    public final UserDao userDao;

@@ -1,30 +1,34 @@
-body{
+body {
     font-family: sans-serif;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-.tags{
+
+.tags {
     position: absolute;
     margin: 0;
     padding: 10px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: rgba(172, 233, 18, 0.274);
     top: 50%;
     left: 50%;
 }
-.tags label{
+
+.tags label {
     margin: 0;
-    font-size:large;
+    font-size: large;
 }
-.tags .select{
+
+.tags .select {
     margin: 0;
     padding: 10px;
     font-size: large;
 }
-.tags .select input{
+
+.tags .select input {
     margin: 0;
     padding: 10px;
     border-radius: 5px;
     background: rgba(234, 248, 42, 0.842);
-    
+
 }

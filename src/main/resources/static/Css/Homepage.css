@@ -1,23 +1,24 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background-size: cover;
 }
-.topBar
-{
+
+.topBar {
     position: absolute;
     width: 100%;
     height: 8%;
     background: rgb(5, 99, 161);
     text-align: right;
 }
-.topBar label
-{
+
+.topBar label {
     font-style: normal;
     color: azure;
 }
-.slideBar{
+
+.slideBar {
     position: absolute;
     left: 0px;
     height: 100%;
@@ -25,16 +26,18 @@ body{
     background: rgb(5, 99, 161);
     text-align: center;
 }
-.slideBar h2{
+
+.slideBar h2 {
     font-style: normal;
     color: azure;
 }
-.tag{
+
+.tag {
     margin: 5px 5px 5px 5px;
-    padding:24px;
+    padding: 24px;
     background: rgba(231, 231, 231, 0.301);
 }
-.tag label
-{
+
+.tag label {
     color: azure;
 }
